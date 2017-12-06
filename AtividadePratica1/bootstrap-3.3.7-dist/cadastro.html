@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css"  href="./css/bootstrap.css">
+    <title>Cadastro</title>
+
+  </head>
+  <body style="background-color: #DCDCDC">
+
+        <header class="page-header">
+             <img src="ufoplogo.jpg" alt="Logo UFOP" width="100%">
+       </header>
+    <div class="row">
+        <div class=" col-sm-2 " ></div>
+
+
+          <div class="col-sm-8">
+
+            <form action="sucessoCadastro.html" method="post">
+                <fieldset>
+                  <legend>Dados Pessoais</legend>
+
+                      <div class="form-group col-sm-4">
+                        <label for="matricula">Matrícula</label>
+                        <input type="text" class="form-control" name="matricula">
+                     </div>
+                     <div class="form-group col-sm-4">
+                       <label for="nome">Nome</label>
+                       <input type="text" class="form-control" name="nome">
+                    </div>
+                    <div class="form-group col-sm-4">
+                      <label for="rg">RG</label>
+                      <input type="text" class="form-control" name="rg">
+                    </div>
+                    <div class="form-group col-sm-4">
+                      <label for="cpf">CPF</label>
+                      <input type="text" class="form-control" name="cpf">
+                    </div>
+                   <div class="form-group col-sm-2">
+                        <label >Gênero</label>
+                        <div class="radio ">
+                        <label><input type="radio" name="genero" value="F">Feminino</label>
+                       </div>
+                      <div class="radio ">
+                        <label><input type="radio" name="genero" value="M">Masculino</label>
+                      </div>
+                      <div class="radio ">
+                        <label> <input type="radio" name="genero" value="N">Não Binário</label>
+                      </div>
+                 </div>
+                <div class="form-group col-sm-4">
+                    <label for="tipoSanguineo">Tipo sanguíneo</label>
+                    <select class="form-control" id="tipoSanguineo">
+                      <option value="0">Selecione seu tipo sanguíneo</option>
+                      <option value="1">A</option>
+                      <option value="2">B</option>
+                      <option value="3">AB</option>
+                      <option value="3">O</option>
+                      <option value="4">Não sabe</option>
+                    </select>
+                </div>
+                  <div class="form-group col-sm-2">
+                    <label >Fator RH</label>
+                    <div class="radio ">
+                      <label><input type="radio" name="fatorRh" value="+">R +</label>
+                    </div>
+                    <div class="radio ">
+                      <label><input type="radio" name="fatorRh" value="-">R -</label>
+                    </div>
+                    <div class="radio ">
+                      <label> <input type="radio" name="fatorRh" value="N">Não Sabe</label>
+                    </div>
+                  </div>
+                  <div class="form-group col-sm-2">
+                    <label for="tel">Telefone</label>
+                    <input type="text" class="form-control" name="tel">
+                  </div>
+
+                  <div class="form-group col-sm-2">
+                    <label for="cel">Celular</label>
+                    <input type="text" class="form-control" name="cel">
+                 </div>
+            </fieldset>
+       <fieldset>
+                <legend>Endereço</legend>
+
+               <div class="form-group col-sm-4">
+                 <label for="rua">Rua</label>
+                 <input type="text" class="form-control" name="rua">
+               </div>
+
+               <div class="form-group col-sm-1">
+                 <label for="numero">Número</label>
+                 <input type="text" class="form-control" name="numero">
+               </div>
+               <div class="form-group col-sm-4">
+                 <label for="complemento">Complemento</label>
+                 <input type="text" class="form-control" name="complemento">
+               </div>
+               <div class="form-group col-sm-4">
+                      <label for="estado">Estado:</label>
+                      <select class="form-control" id="estado">
+                        <option value="0">Selecione uma estado</option>
+                        <option value="ac">Acre</option>
+                            <option value="al">Alagoas</option>
+                            <option value="am">Amazonas</option>
+                            <option value="ap">Amapá</option>
+                            <option value="ba">Bahia</option>
+                            <option value="ce">Ceará</option>
+                            <option value="df">Distrito Federal</option>
+                            <option value="es">Espírito Santo</option>
+                            <option value="go">Goiás</option>
+                            <option value="ma">Maranhão</option>
+                            <option value="mt">Mato Grosso</option>
+                            <option value="ms">Mato Grosso do Sul</option>
+                            <option value="mg">Minas Gerais</option>
+                            <option value="pa">Pará</option>
+                            <option value="pb">Paraíba</option>
+                            <option value="pr">Paraná</option>
+                            <option value="pe">Pernambuco</option>
+                            <option value="pi">Piauí</option>
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="rn">Rio Grande do Norte</option>
+                            <option value="ro">Rondônia</option>
+                            <option value="rs">Rio Grande do Sul</option>
+                            <option value="rr">Roraima</option>
+                            <option value="sc">Santa Catarina</option>
+                            <option value="se">Sergipe</option>
+                            <option value="sp">São Paulo</option>
+                            <option value="to">Tocantins</option>
+                      </select>
+                  </div>
+                  <div class="form-group col-sm-2">
+                      <label for="cidade">Cidade:</label>
+                      <select class="form-control" id="cidade">
+                        <option value="0">Selecione uma cidade</option>
+                        <option value="1">João Monlevade</option>
+                        <option value="2">Belo Horizonte</option>
+                        <option value="3">Bela Vista de Minas</option>
+                        <option value="4">Contagem</option>
+                        <option value="5">Ouro Preto</option>
+                      </select>
+                  </div>
+                </fieldset>
+        <fieldset>
+                <legend>Acessos</legend>
+
+                <div class="form-group col-sm-4">
+                  <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="biblioteca">Biblioteca
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="restaurante">Restaurante
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="clube">Clube
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="campo">Campo
+                  </label>
+                </div>
+              </div>
+        </fieldset>
+
+        <fieldset>
+                    <legend>Login</legend>
+
+                    <div class="form-group col-sm-4">
+                      <label for="email">E-mail</label>
+                      <input type="email" class="form-control" name="email">
+                    </div>
+
+                    <div class="form-group col-sm-4">
+                      <label for="senha">Senha</label>
+                      <input type="password" class="form-control" name="senha">
+                    </div>
+
+                    <div class="form-group col-sm-4">
+                      <label for="confSenha">Confirmação de Senha</label>
+                      <input type="password" class="form-control" name="confSenha">
+                    </div>
+
+        </fieldset>
+
+        <button type="submit" class="btn btn-primary" >Enviar</button>
+        <button type="reset" class="btn btn-primary">Limpar</button>
+
+        </form>
+        </div>
+        <div class="col-sm-2"></div>
+      </div><br><br>
+
+
+
+      <footer class="footer ">
+        <div class="navbar navbar-fixed" align="center">
+           <p>UFOP - Universidade Federal de Ouro Preto </p>
+           <p>Cleide Helena Almeida Silva Matrícula: 12.1.8511</p>
+        </div>
+      </footer>
+
+
+  </body>
+</html>
